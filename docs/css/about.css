@@ -44,3 +44,105 @@
 .achivement__card__icon{
     background: var(--color-primary);
 }
+/*------------------about team------------------*/
+
+.team{
+    background:var(--color-bg1);
+    box-shadow: inset 0 0 3rem 
+    rgba(0,0,0,0.5);
+}
+.team__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.team__member{
+    background-color: var(--color-bg2);
+    padding: 2rem;
+    border:1px solid transparent;
+    border-radius: 1rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+.team__member:hover{
+    background: transparent;
+    border:1px solid var(--color-primary);
+}
+.team__member__img img{
+    filter: saturate(0);
+}
+.team__member__img:hover img{
+    filter: saturate(1);
+}
+.team__member__info *{
+    text-align: center;
+    margin-top: 1.4rem;
+} 
+.team__member__info p{
+    color: var(--color-light);
+}
+
+.team__member__social{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba
+    (0,0,0,0.3);
+    transition: var(--transition);
+}
+.team__member:hover .team__member__social{
+    right: 0;
+}
+
+.team__member__social a{
+    padding: 1rem;
+}
+
+/*============Media Queries================*/
+
+@media screen and (max-width: 1024px){
+    body{
+        margin-top: 2rem;        
+    }
+.about__achivements-container{
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin: 2rem;
+    
+}
+.achivements__left{
+    width: 80%;
+    margin: 0 auto;
+}
+.team__container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.team__member{
+    padding: 1rem;
+}
+}
+/*============Media Queries Tablets================*/
+
+@media screen and (max-width: 600px){
+    .achivements__cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+    .team__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+    .team__member{
+        padding: 0;
+    }    
+    .team__member p{
+        margin-bottom: 1.5rem;
+    }
+}
