@@ -1,0 +1,46 @@
+
+.about__achivements{
+    margin-top: 3rem;    
+}
+.about__achivements-container{
+    display: grid;
+    grid-template-columns:  40% 50%;
+    gap: 5rem;
+}
+.achivements__right > p{
+    margin: 1.6rem 0 2.5rem;    
+}
+.achivements__cards{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;  
+}
+.achivement__card{
+    background-color:var(--color-bg1);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+ 
+
+    transtition:var(--transition);
+}
+.achivement__card:hover {
+    backhground-color: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.3);
+}
+.achivement__card__icon{
+    background: var(--color-danger);
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.achivement__card:nth-child(2)
+.achivement__card__icon{
+    background: var(--color-success);
+}
+.achivement__card:nth-child(3)
+.achivement__card__icon{
+    background: var(--color-primary);
+}
