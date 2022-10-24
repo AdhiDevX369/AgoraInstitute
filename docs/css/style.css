@@ -433,7 +433,7 @@ nav button#close-menu-btn{
 
 /*==================== HOME ====================*/
 header{
-  height: 52vh;
+  height: 100vh;
   margin-bottom: 4rem;
 }
 .header__container{
