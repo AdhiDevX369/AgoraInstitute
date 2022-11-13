@@ -50,6 +50,7 @@
             email: email,
           });
           alert("User created successfully");
+          window.location.href = "download.html";
           // ...
         })
         .catch((error) => {
@@ -75,6 +76,7 @@
             lastLogin: dt,
           });
           alert("User logged in successfully");
+          window.location.href = "download.html";
         })
         .catch((error) => {
           const errorCode = error.code;
